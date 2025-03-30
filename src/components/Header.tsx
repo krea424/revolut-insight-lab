@@ -9,7 +9,7 @@ const Header = () => {
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto flex items-center justify-between py-4">
         <div className="flex items-center">
-          <h1 className="text-xl font-bold text-revolut-navy">FinEu presenta</h1>
+          <h1 className="text-xl font-bold text-revolut-navy">FinEu Presenta</h1>
         </div>
 
         {/* Desktop navigation */}
