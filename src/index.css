@@ -1,10 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 221 83% 53%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 225 25% 26%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 330 86% 60%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -96,6 +99,46 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .container {
+    @apply px-4 md:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 text-revolut-navy;
+  }
+
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-semibold mb-6 text-gray-700;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-all;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .stat-card {
+    @apply bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center text-center;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(100deg, rgba(25,28,50,1) 0%, rgba(6,102,235,1) 100%);
+}
+
+.second-gradient-bg {
+  background: linear-gradient(100deg, rgba(25,28,50,0.95) 0%, rgba(25,28,50,0.8) 100%);
 }

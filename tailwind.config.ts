@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+                revolut: {
+                    blue: '#0666eb',
+                    navy: '#191c32',
+                    pink: '#ef447c',
+                    green: '#39d98a',
+                    light: '#f5f7fa',
+                },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,12 +92,38 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(10px)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0)'
+                    }
+                },
+                'fade-right': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateX(-20px)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateX(0)'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.7s ease-out forwards',
+                'fade-right': 'fade-right 0.7s ease-out forwards'
+			},
+            fontFamily: {
+                'montserrat': ['Montserrat', 'sans-serif'],
+                'inter': ['Inter', 'sans-serif'],
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
