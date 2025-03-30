@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div>
             <h2 className="text-2xl font-bold mb-2">Revolut Insight Lab</h2>
-            <p className="text-gray-300">Analisi del modello di business Revolut nel mercato italiano</p>
+            <p className="text-gray-300">FinEu presenta: Analisi del modello di business Revolut nel mercato italiano</p>
           </div>
           
           <button 

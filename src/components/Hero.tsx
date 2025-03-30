@@ -1,11 +1,22 @@
 
 import { ArrowDown } from "lucide-react";
+// Remove the problematic import and use the public path instead
 
 const Hero = () => {
   return (
     <section className="gradient-bg text-white min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8 animate-fade-in opacity-0" style={{ animationDelay: "0.1s" }}>
+            <img 
+              src="/logo_fineu.png" 
+              alt="FinEu Logo" 
+              className="h-56 mx-auto"
+            />
+            <h2 className="text-2xl md:text-3xl font-semibold mt-4 animate-fade-in opacity-0" style={{ animationDelay: "0.2s" }}>
+              presenta
+            </h2>
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in opacity-0" style={{ animationDelay: "0.3s" }}>
             Il Modello di Business di Revolut nel Mercato Italiano
           </h1>
