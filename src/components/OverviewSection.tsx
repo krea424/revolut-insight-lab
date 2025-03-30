@@ -1,6 +1,6 @@
 
+import React, { useEffect, useRef } from "react";
 import { Calendar, Users, LineChart, Globe, CreditCard } from "lucide-react";
-import { useEffect, useRef } from "react";
 
 const OverviewSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
