@@ -1,11 +1,20 @@
 
 import { ArrowDown } from "lucide-react";
-// Remove the problematic import and use the public path instead
 
 const Hero = () => {
   return (
-    <section className="gradient-bg text-white min-h-screen flex items-center justify-center pt-16">
-      <div className="container mx-auto px-6 py-20">
+    <section 
+      className="text-white min-h-screen flex items-center justify-center pt-16 relative"
+      style={{
+        backgroundImage: "url('/lovable-uploads/86e51c87-ce4f-45e7-99fb-66dde1cae9b0.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      
+      <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 animate-fade-in opacity-0" style={{ animationDelay: "0.1s" }}>
             <img 
